@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Phrase-o-matic</title>
+<meta charset="utf-8">
+<style>
+body {
+	font-family: Verdana, Helvetica, sans-serif;
+}
+</style>
+<script>
+
+function makePhrases() {
+	var words1 = ["all the time", "many leveled", "13 inches", "a^2=b^2", "winning"];
+	var words2 = ["slay", "value-added", "oriented", "focused", "moving"];
+	var words3 = ["continue", "finish", "in hell", "strategy", "vision"];
+
+	var rand1 = Math.floor(Math.random() * words1.length);
+	var rand2 = Math.floor(Math.random() * words2.length);
+	var rand3 = Math.floor(Math.random() * words3.length);
+
+	var phrase = words1[rand1] + " " + words2[rand2] + " " + words3[rand3];
+	var phraseElement = document.getElementById("phrase");
+	phraseElement.innerHTML = phrase;
+}
+window.onload = makePhrases;
+</script>
+</head>
+<body>
+<h1>Phrase-o-Matic says:</h1>
+
+<p id="phrase"></p>
+
+</body>
+</html>
+
