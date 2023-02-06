@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Candygrams</title>
+    <style>
+      body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+  padding: 20px;
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+#send-candygram {
+  padding: 10px 20px;
+  background-color: pink;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+#output {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: lightyellow;
+  border-radius: 10px;
+}
+    </style>
+  </head>
+  <body>
+    <h1>Candygrams</h1>
+    <form>
+      <label for="friend-name">Friend's name:</label>
+      <input type="text" id="friend-name" required>
+      <br><br>
+      <label for="candy-message">Candy Message:</label>
+      <textarea id="candy-message" required></textarea>
+      <br><br>
+      <button id="send-candygram">Send Candygram</button>
+    </form>
+    <div id="output"></div>
+    <script>
+      const form = document.querySelector('form');
+const friendName = document.querySelector('#friend-name');
+const candyMessage = document.querySelector('#candy-message');
+const sendCandygram = document.querySelector('#send-candygram');
+const output = document.querySelector('#output');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  const name = friendName.value;
+  const message = candyMessage.value;
+  
+  output.innerHTML = `<h2>Candygram for ${name}:</h2><p>${message}</p>`;
+});
+    </script>
+  </body>
+</html>
