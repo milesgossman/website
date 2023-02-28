@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Form Validation Example</title>
+    <title>email form validation</title>
   </head>
   <body>
     <h1>Form Validation Example</h1>
@@ -16,8 +16,6 @@
     <script>
       function validateForm() {
         const email = document.getElementById('email').value;
-
-        // Check if the email is valid
         if (!isValidEmail(email)) {
           const errorMessage = document.getElementById('error-message');
           errorMessage.textContent = 'Please enter a valid email address.';
@@ -28,7 +26,6 @@
       }
 
       function isValidEmail(email) {
-        // Use regular expression to check if the email is valid
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
       }
