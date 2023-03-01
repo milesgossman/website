@@ -7,7 +7,7 @@ form.addEventListener('submit', (event) => {
   const emailValue = emailInput.value.trim();
 
   if (!isValidEmail(emailValue)) {
-    errorMessage.textContent = 'please enter a valid email address.';
+    errorMessage.textContent = 'please enter a valid email address';
     return;
   }
   form.submit();
