@@ -7,7 +7,7 @@ form.addEventListener('submit', (event) => {
   const emailValue = emailInput.value.trim();
 
   if (!isValidEmail(emailValue)) {
-    errorMessage.textContent = 'Please enter a valid email address with at least 2 characters after the last dot.';
+    errorMessage.textContent = 'please enter a valid email address.';
     return;
   }
   form.submit();
