@@ -1,34 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>email form validation</title>
+    <meta charset="UTF-8">
+    <title>Email Validation Example</title>
   </head>
   <body>
-    <h1>Form Validation Example</h1>
-    <form id="myForm" onsubmit="return validateForm()">
+    <form>
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <br>
+      <input type="email" id="email" name="email">
       <button type="submit">Submit</button>
+      <p id="error-message"></p>
     </form>
-    <p id="error-message"></p>
 
-    <script>
-      function validateForm() {
-        const email = document.getElementById('email').value;
-        if (!isValidEmail(email)) {
-          const errorMessage = document.getElementById('error-message');
-          errorMessage.textContent = 'Please enter a valid email address.';
-          return false;
-        }
-
-        return true;
-      }
-
-      function isValidEmail(email) {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email);
-      }
-    </script>
+    <script src="email-validation.js"></script>
   </body>
 </html>
