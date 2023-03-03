@@ -3,13 +3,9 @@ body {
     font-family: Arial, sans-serif;
     font-size: 16px;
   }
-  
-  /* Set the background color */
   body {
-    background-color: #f0f0f0;
+    background-color: #ae1010;
   }
-  
-  /* Center the page content */
   .container {
     max-width: 1200px;
     margin: 0 auto;
