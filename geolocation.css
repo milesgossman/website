@@ -44,21 +44,11 @@ body {
   }
 
   .location-info {
-    background-color: #fff;
+    background-color: #2c9a07;
     border-radius: 5px;
     padding: 20px;
     margin-top: 20px;
   }
-  
-  .location-info h2 {
-    margin-top: 0;
-  }
-  
-  .location-info p {
-    margin: 0;
-  }
-  
-  /* Style the footer */
   footer {
     background-color: #333;
     color: #fff;
