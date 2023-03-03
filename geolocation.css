@@ -42,11 +42,6 @@ body {
     padding: 10px;
     border-radius: 5px;
   }
-  
-  nav a:hover {
-    background-color: #fff;
-    color: #333;
-  }
 
   .location-info {
     background-color: #fff;
