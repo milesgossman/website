@@ -1,4 +1,3 @@
-/* Set a default font family and font size */
 body {
     font-family: serif, Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
@@ -14,24 +13,6 @@ body {
 
   nav {
  align-items: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  nav li {
-    margin-left: 20px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
   }
   footer {
     background-color: #333;
