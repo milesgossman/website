@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Radio Button Example</title>
+  <style>
+    /* Style the radio buttons */
+    input[type="radio"] {
+      display: none;
+    }
+
+    /* Style the labels for the radio buttons */
+    label {
+      display: inline-block;
+      padding: 10px;
+      font-size: 16px;
+      color: #333;
+      background-color: #fff;
+      border: 2px solid #333;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Style the labels for the selected radio button */
+    input[type="radio"]:checked + label {
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h2>What is your favorite color?</h2>
+  <div>
+    <input type="radio" id="red" name="color" value="red">
+    <label for="red">Red</label>
+  </div>
+  <div>
+    <input type="radio" id="green" name="color" value="green">
+    <label for="green">Green</label>
+  </div>
+  <div>
+    <input type="radio" id="blue" name="color" value="blue">
+    <label for="blue">Blue</label>
+  </div>
+  
+  <script>
+    // Get all radio buttons and add event listener
+    const radios = document.querySelectorAll('input[type="radio"]');
+    radios.forEach(radio => {
+      radio.addEventListener('change', () => {
+        console.log(`Selected value: ${radio.value}`);
+      });
+    });
+  </script>
+</body>
+</html>
