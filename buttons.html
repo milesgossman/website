@@ -22,7 +22,7 @@
 </head>
 <body>
   <h2>What is your favorite color?</h2>
-  <div>
+  <div onclick="red()" id="red-div">
     <input type="radio" id="red" name="color" value="red">
     <label for="red">Red</label>
   </div>
@@ -44,6 +44,10 @@
         document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
     }
     window.onload = init;
+
+    function red() {
+      var red = document.getElementById("red-div").color = 'red';
+    }
 </script>
 <footer id="vLinks">
     <hr>
