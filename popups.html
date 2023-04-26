@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pop-up Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="showAlert()">Click for Alert</button>
+    <button onclick="showPrompt()">Click for Prompt</button>
+    <button onclick="showConfirm()">Click for Confirm</button>
+
+    <script>
+      function showAlert() {
+        alert("This is an alert message.");
+      }
+
+      function showPrompt() {
+        var name = prompt("Please enter your name:", "");
+        if (name != null && name != "") {
+          alert("Hello " + name + "! You entered the name: " + name);
+        }
+      }
+
+      function showConfirm() {
+        var result = confirm("Are you sure you want to proceed?");
+        if (result == true) {
+          alert("You clicked OK!");
+        } else {
+          alert("You clicked Cancel.");
+        }
+      }
+    </script>
+  </body>
+</html>
